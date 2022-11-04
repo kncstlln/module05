@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <script>
+        class myRide
+        {
+            constructor()
+            {
+                var brand;
+                var variant;
+            }
+
+            getName()
+            {
+                return this.brand;
+            }
+            setName(brand)
+            {
+                this.brand=brand;
+            }
+            getVariant()
+            {
+                return this.variant;
+            }
+            setVariant(variant)
+            {
+                this.variant=variant;
+            }
+        }
+
+        var Rides= new myRide();
+
+        Rides.setName("Honda");
+        Rides.setVariant("Civic");
+
+        document.writeln(Rides.getName() +" "+ Rides.getVariant());
+        </script>
+    </body>
+
+</html>
